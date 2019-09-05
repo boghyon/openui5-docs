@@ -1,11 +1,12 @@
+<!-- copy51fe8f410623483097c292514c241eeb -->
+
 | loio |
 | -----|
 | 51fe8f410623483097c292514c241eeb |
 
 <div id="loio">
 
-view on: [help.sap.com](https://help.sap.com/viewer/DRAFT/3237636b137e43519a20ad5513c49ccb/latest/en-US/51fe8f410623483097c292514c241eeb.html) | [demo kit nightly build](https://openui5nightly.hana.ondemand.com/#/topic/51fe8f410623483097c292514c241eeb) | [demo kit latest release](https://openui5.hana.ondemand.com/#/topic/51fe8f410623483097c292514c241eeb)</div>
-<!-- copy51fe8f410623483097c292514c241eeb -->
+view on: [demo kit nightly build](https://openui5nightly.hana.ondemand.com/#/topic/51fe8f410623483097c292514c241eeb) | [demo kit latest release](https://openui5.hana.ondemand.com/#/topic/51fe8f410623483097c292514c241eeb)</div>
 
 ## An Empty Page Comes Up
 
@@ -58,7 +59,7 @@ If you are running the code in SAP Web IDE, you have to configure the `neo-app.j
 
 Other development environments might need the resources to be copied to the server and referenced relatively to the app \(see [Standard Variant for Bootstrapping](Standard_Variant_for_Bootstrapping_91f1f45.md)\).
 
-Alternatively, you can use the CDN version \(see [Variant for Bootstrapping from Content Delivery Network](Variant_for_Bootstrapping_from_Content_Delivery_Network_2d3eb2f.md)\).
+Alternatively, you can use the CDN version \(see [Variant for Bootstrapping from Content Delivery Network](Variant_for____________Bootstrapping_from_Content_Delivery_Network_2d3eb2f.md)\).
 
 ***
 

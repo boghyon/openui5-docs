@@ -1,4 +1,4 @@
-![openui5](../media/ui5.png)
+![openui5](../media/openui5.png)
 
 # OpenUI5: UI Development Toolkit for HTML5
 
@@ -6,8 +6,8 @@ OpenUI5 Version for the OpenUI5 Demo Kit
 
 -   [OpenUI5: UI Development Toolkit for HTML5](OpenUI5_UI_DevelopmentToolkit_for_HTML5_95d113b.md)
     -   [What's New in OpenUI5](What's_New_in_OpenUI5_99ac68a.md)
-        -   [What's New in OpenUI5 1.68](What's_New_in_OpenUI51.68_5531aef.md)
-        -   [What's New in OpenUI5 1.67](What's_New_in_OpenUI5_1.67__0968958.md)
+        -   [What's New in OpenUI5 1.70](What's_New_in_OpenUI51.70_4e89fee.md)
+        -   [What's New in OpenUI5 1.69](What's_New_in_OpenUI51.69_41203fd.md)
     -   [Read Me First](Read_Me_First_167193c.md)
         -   [Compatibility Rules](Compatibility_Rules_91f0873.md)
         -   [Browser and Platform Support](Browser_and_Platform_Support_74b59ef.md)
@@ -135,7 +135,7 @@ OpenUI5 Version for the OpenUI5 Demo Kit
             -   [Step 7: Navigate to Routes with Mandatory Parameters](Step_7_Navigate_to_Routes_with_Mandatory_Parameters_f96d252.md)
             -   [Step 8: Navigate with Flip Transition](Step_8_Navigate_with_Flip_Transition_3e5f6f3.md)
             -   [Step 9: Allow Bookmarkable Tabs with Optional Query Parameters](Step_9_Allow_Bookmarkable_Tabs_with_Optional_Query_Parameters_b8561ff.md)
-            -   [Step 10: Implement Lazy Loading](Step_10_Implement_Lazy_Loading_cdab0a1.md)
+            -   [Step 10: Implement "Lazy Loading"](Step_10_Implement_Lazy_Loading_cdab0a1.md)
             -   [Step 11: Assign Multiple Targets](Step_11_Assign_Multiple_Targets_b01840e.md)
             -   [Step 12: Make a Search Bookmarkable](Step_12_Make_a_Search_Bookmarkable_e85da53.md)
             -   [Step 13: Make Table Sorting Bookmarkable](Step_13_Make_Table_Sorting_Bookmarkable_3975987.md)
@@ -200,7 +200,7 @@ OpenUI5 Version for the OpenUI5 Demo Kit
     -   [Essentials](Essentials_ec699e0.md)
         -   [Bootstrapping: Loading and Initializing](Bootstrapping_Loading_and_Initializing__a04b0d1.md)
             -   [Standard Variant for Bootstrapping](Standard_Variant_for_Bootstrapping_91f1f45.md)
-            -   [Variant for Bootstrapping from Content Delivery Network](Variant_for_Bootstrapping_from_Content_Delivery_Network_2d3eb2f.md)
+            -   [Variant for Bootstrapping from Content Delivery Network](Variant_for____________Bootstrapping_from_Content_Delivery_Network_2d3eb2f.md)
             -   [noJQuery Variant for Bootstrapping](noJQuery_Variant_for_Bootstrapping_91f1dd0.md)
             -   [Initialization Process](Initialization_Process_.md#loio91f2c9076f4d1014b6dd926db0e91070)
                 -   [Loading of Additional Resources During Bootstrap](Initialization_Process_.md#loiobf10bd41ac8f49048a1ccb743fbfbb8a)
@@ -239,6 +239,7 @@ OpenUI5 Version for the OpenUI5 Demo Kit
                     -   [Handling Events in XML Views](Handling_Events_in_XML_Views_b0fb4de.md)
                     -   [Preprocessing XML Views](Preprocessing_XML_Views_48b81b9.md)
                     -   [XML View Cache](XML_View_Cache_3d85d5e.md)
+                    -   [Require Modules in XML View and Fragment](Require_Modules_in_XML_View_and_Fragment_b11d853.md)
                 -   [JSON View](JSON_View_91f2852.md)
                 -   [JS View](JS_View_91f262e.md)
                 -   [HTML View](HTML_View_9756f47.md)
@@ -312,6 +313,7 @@ OpenUI5 Version for the OpenUI5 Demo Kit
                         -   [Binding Modes](Binding_Modes_e37a0c3.md)
                         -   [Suspend and Resume](Suspend_and_Resume_b0f5c53.md)
                         -   [Context API](Context_API_22ee78b.md)
+                        -   [Accessing Data in Controller Code](Accessing_Data_in_Controller_Code_17b30ac.md)
                         -   [Automatic determination of $expand and $select](Automatic_determination_of_$expand_and_$select_10ca58b.md)
                     -   [Binding Events](Binding_Events_1a010d3.md)
                     -   [Filtering](Filtering_5338bd1.md)

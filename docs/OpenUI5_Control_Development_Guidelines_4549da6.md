@@ -1,11 +1,12 @@
+<!-- loio4549da61e2d949d6a3d20ad8a9d17a6f -->
+
 | loio |
 | -----|
 | 4549da61e2d949d6a3d20ad8a9d17a6f |
 
 <div id="loio">
 
-view on: [help.sap.com](https://help.sap.com/viewer/DRAFT/3237636b137e43519a20ad5513c49ccb/latest/en-US/4549da61e2d949d6a3d20ad8a9d17a6f.html) | [demo kit nightly build](https://openui5nightly.hana.ondemand.com/#/topic/4549da61e2d949d6a3d20ad8a9d17a6f) | [demo kit latest release](https://openui5.hana.ondemand.com/#/topic/4549da61e2d949d6a3d20ad8a9d17a6f)</div>
-<!-- loio4549da61e2d949d6a3d20ad8a9d17a6f -->
+view on: [demo kit nightly build](https://openui5nightly.hana.ondemand.com/#/topic/4549da61e2d949d6a3d20ad8a9d17a6f) | [demo kit latest release](https://openui5.hana.ondemand.com/#/topic/4549da61e2d949d6a3d20ad8a9d17a6f)</div>
 
 ## OpenUI5 Control Development Guidelines
 
@@ -92,7 +93,7 @@ With regard to the renderer, the following guidelines apply:
 
 -   Unknown strings, such as values coming from string properties, need to be escaped before writing to HTML; this avoids security risks via XSS attacks.
 
--   Use `RenderManager.writeEscaped(…)`, or the function provided by `sap/base/security/encodeXML`.
+-   Use `RenderManager.writeEscaped(…)`, or the function provided by module `sap/base/security/encodeXML`.
 
 -   Container controls such as `Panel` or `Page`, as opposed to layout controls with a generic "content" aggregation, should render the children directly next to each other with no additional HTML or layout applied.
 

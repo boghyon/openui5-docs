@@ -1,11 +1,12 @@
+<!-- loio851bde42e4e1410c96abbe402fa9128c -->
+
 | loio |
 | -----|
 | 851bde42e4e1410c96abbe402fa9128c |
 
 <div id="loio">
 
-view on: [help.sap.com](https://help.sap.com/viewer/DRAFT/3237636b137e43519a20ad5513c49ccb/latest/en-US/851bde42e4e1410c96abbe402fa9128c.html) | [demo kit nightly build](https://openui5nightly.hana.ondemand.com/#/topic/851bde42e4e1410c96abbe402fa9128c) | [demo kit latest release](https://openui5.hana.ondemand.com/#/topic/851bde42e4e1410c96abbe402fa9128c)</div>
-<!-- loio851bde42e4e1410c96abbe402fa9128c -->
+view on: [demo kit nightly build](https://openui5nightly.hana.ondemand.com/#/topic/851bde42e4e1410c96abbe402fa9128c) | [demo kit latest release](https://openui5.hana.ondemand.com/#/topic/851bde42e4e1410c96abbe402fa9128c)</div>
 
 ## Step 1: Ready...
 
@@ -68,7 +69,7 @@ The `index` module that we load with the `onInit` parameter will hold the applic
 The `body` tag is defined with the `sapUiBody` class and the `content` ID. This is where we will add the content of the app in the next steps.
 
 > Note:
-> For more information about bootstrapping from the CDN, see [Variant for Bootstrapping from Content Delivery Network](Variant_for_Bootstrapping_from_Content_Delivery_Network_2d3eb2f.md).
+> For more information about bootstrapping from the CDN, see [Variant for Bootstrapping from Content Delivery Network](Variant_for____________Bootstrapping_from_Content_Delivery_Network_2d3eb2f.md).
 > 
 > 
 
@@ -146,5 +147,5 @@ Now open the `index.html` file in your browser. When the button is pressed, a me
 
 [Create a neo-app.json Project Configuration File](Create_a_neo-app.json_Project_Configuration_File_28fa753.md)
 
-[Variant for Bootstrapping from Content Delivery Network](Variant_for_Bootstrapping_from_Content_Delivery_Network_2d3eb2f.md)
+[Variant for Bootstrapping from Content Delivery Network](Variant_for____________Bootstrapping_from_Content_Delivery_Network_2d3eb2f.md)
 

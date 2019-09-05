@@ -1,11 +1,12 @@
+<!-- loioeeaa5de14e5f4fc1ac796bc0c1ada5fb -->
+
 | loio |
 | -----|
 | eeaa5de14e5f4fc1ac796bc0c1ada5fb |
 
 <div id="loio">
 
-view on: [help.sap.com](https://help.sap.com/viewer/DRAFT/3237636b137e43519a20ad5513c49ccb/latest/en-US/eeaa5de14e5f4fc1ac796bc0c1ada5fb.html) | [demo kit nightly build](https://openui5nightly.hana.ondemand.com/#/topic/eeaa5de14e5f4fc1ac796bc0c1ada5fb) | [demo kit latest release](https://openui5.hana.ondemand.com/#/topic/eeaa5de14e5f4fc1ac796bc0c1ada5fb)</div>
-<!-- loioeeaa5de14e5f4fc1ac796bc0c1ada5fb -->
+view on: [demo kit nightly build](https://openui5nightly.hana.ondemand.com/#/topic/eeaa5de14e5f4fc1ac796bc0c1ada5fb) | [demo kit latest release](https://openui5.hana.ondemand.com/#/topic/eeaa5de14e5f4fc1ac796bc0c1ada5fb)</div>
 
 ## JSDoc Guidelines
 
@@ -27,7 +28,9 @@ Here are some general principles for writing comments:
 
 -   Document at least public and protected methods with JSDoc, mark them as `@public` or `@protected`.
 
-    If you also document private methods with JSDoc, mark them as `@private`. This is currently the default in OpenUI5, but not in JSDoc, so it is safer to explicitly specify this. `@protected` is not clearly defined for a JavaScript environment. In OpenUI5 it denotes a method that is not meant to be used by applications, but might be used outside the relevant class or subclasses, but only in closely related classes.
+    If you also document private methods with JSDoc, mark them as `@private`. This is currently the default in OpenUI5, but not in JSDoc, so it is safer to explicitly specify this. `@protected` is not clearly defined for a JavaScript environment. In OpenUI5, it denotes a method that is not meant to be used by applications. It might be used outside the relevant class or subclasses, but only in closely related classes.
+
+    To specify explicit classes that are allowed to use a class or function, mark them as `@private` followed by `@ui5-restricted <modulenames>`, which will override the latter and make sure that the JSDoc cannot generate this content.
 
 -   Document method parameters with type \(in curly braces\) and parameter name \(in square brackets if optional\).
 
@@ -69,6 +72,11 @@ A documentation comment should provide the following content:
 -   Don’t use a period inside a summary sentence. For example, don’t use “e.g.”, but write “for example” instead. Otherwise the summary sentence will be cut off.
 
 
+> Note:
+> You can create links to external sources. The source should comply with standard legal requirements. The required icons are added to the link as described in the Demo Kit under *Terms of Use* \> *Disclaimer*. For more information about creating links, see the explanations below \(@see and \{@link\}\).
+> 
+> 
+
 ***
 
 #### Recommendations for Writing Descriptions
@@ -77,7 +85,7 @@ A documentation comment should provide the following content:
 
 -   Make sure you spell acronyms correctly, for example, ID, JSON, URL.
 
--   In the summary sentence, omit clauses like "This class" or "This method".
+-   In the summary sentence, omit repetitive clauses like "This class" or "This method".
 
 -   For actions, start directly with an appropriate verb in the third person: Adds, allocates, constructs, converts, deallocates, destroys, gets, provides, reads, removes, represents, returns, sets, saves, and so on.
 
@@ -153,10 +161,7 @@ Block Tags<a name="loioeeaa5de14e5f4fc1ac796bc0c1ada5fb__table_krl_ffm_n2b"/>
 		<tr>
 			<td>@param</td>
 			<td>Adds parameters</td>
-			<td> 
-
-```
-lang-js/**
+			<td> ``` js/**
  * ...
  * @param {string} statement The SQL statement to be prepared
  * ...
@@ -179,7 +184,7 @@ lang-js/**
 		</tr>
 		<tr>
 			<td>@author</td>
-			<td>Adds the name of the developer responsible for code</td>
+			<td>Adds the name of the developer responsible for the code</td>
 			<td> `@author Max Mustermann` </td>
 			<td>This is an optional tag that is not displayed in JSDoc. If you need to use the version tag, use $\{version\} so you don't have to update this manually for each new version.</td>
 		</tr>
@@ -214,10 +219,7 @@ lang-js/**
 		<tr>
 			<td>@example</td>
 			<td>Inserts a code sample after the comment</td>
-			<td> 
-
-```
-lang-js/**
+			<td> ``` js/**
  * ...
  * @example
  * var id = myjob.schedules.add({
@@ -230,6 +232,7 @@ lang-js/**
 			<td>The code sample is inserted automatically with <pre\>. It is always inserted right after the comment. To insert an example somewhere else, for example, in the middle of a comment, use <pre\>. You can add a header for the example by using <caption\>.</td>
 	</tbody>
 </table>
+
 ***
 
 #### Tips for Using Block Tags

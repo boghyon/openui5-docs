@@ -1,11 +1,12 @@
+<!-- loiof51dbb78e7d5448e838cdc04bdf65403 -->
+
 | loio |
 | -----|
 | f51dbb78e7d5448e838cdc04bdf65403 |
 
 <div id="loio">
 
-view on: [help.sap.com](https://help.sap.com/viewer/DRAFT/3237636b137e43519a20ad5513c49ccb/latest/en-US/f51dbb78e7d5448e838cdc04bdf65403.html) | [demo kit nightly build](https://openui5nightly.hana.ondemand.com/#/topic/f51dbb78e7d5448e838cdc04bdf65403) | [demo kit latest release](https://openui5.hana.ondemand.com/#/topic/f51dbb78e7d5448e838cdc04bdf65403)</div>
-<!-- loiof51dbb78e7d5448e838cdc04bdf65403 -->
+view on: [demo kit nightly build](https://openui5nightly.hana.ondemand.com/#/topic/f51dbb78e7d5448e838cdc04bdf65403) | [demo kit latest release](https://openui5.hana.ondemand.com/#/topic/f51dbb78e7d5448e838cdc04bdf65403)</div>
 
 ## Stable IDs: All You Need to Know
 
@@ -19,7 +20,7 @@ Stable IDs are IDs for controls, elements, or components that you set yourself i
 
 If you don't define IDs, OpenUI5 generates them dynamically. These IDs are not static and might differ from program run to program run. For example, the page and table in the following XML view could have the generated IDs `__page0` and `__table0` at runtime:
 
-```lang-xml
+``` xml
 <mvc:View
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc">
@@ -57,7 +58,12 @@ The generated IDs change whenever the control structure of the app changes. The 
 
 <a name="loiof51dbb78e7d5448e838cdc04bdf65403__section_fc4_4w5_1bb"/>
 
-### Here's how you set IDs manually to keep them stable
+### How to Set IDs Manually to Keep Them Stable
+
+> Note:
+> Using the rule *Stable control IDs are required for SAPUI5 flexibility services* in the Support Assistant, you can check whether all controls use stable IDs. For more information, see [How to Check If All Your IDs Are Stable](Stable_IDs_All_You_Need_to_Know_f51dbb7.md#loiof51dbb78e7d5448e838cdc04bdf65403__section_howtocheck).
+> 
+> 
 
 |**Views**| -   Views in the descriptor for applications, components, and libraries
 
@@ -65,7 +71,7 @@ The standard use case is that you use stable IDs for the view that the router na
 
 Example:
 
-    ```lang-js
+    ``` js
 {
 "sap.ui5": {
 	"rootView": {
@@ -95,7 +101,7 @@ If you embed your view, set its ID \(such as `myEmbeddedView`\).
 
 Example:
 
-    ```lang-xml
+    ``` xml
 <mvc:View xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc">
 	<Page id="page">
@@ -111,7 +117,7 @@ If you create the view programmatically, provide the ID as one of the parameters
 
 Example:
 
-    ```lang-js
+    ``` js
 // "XMLView" required from module "sap/ui/core/mvc/XMLView"
 XMLView.create({
 	id: <component>.createId("myProgrammaticView"),
@@ -141,7 +147,7 @@ The XML view prefixes the control IDs \(only the defined IDs, not the automatica
 
 If the following XML view is instantiated using the ID `myView`, the contained page and table would have the IDs `myView--page` and `myView--table` at runtime:
 
-    ```lang-js
+    ``` js
 <mvc:View xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc">
 	<Page id="page">
 		<content>
@@ -157,7 +163,7 @@ If the following XML view is instantiated using the ID `myView`, the contained p
 
 For JavaScript views and JavaScript-generated controls you must use the `createID` method of the view or component. Here's how it could look like when you're creating a control directly in the control code:
 
-    ```lang-xml
+    ``` xml
 // "Button" required from module "sap/m/Button"
 new Button({
 	id : oView.createId("ConfirmButton"),
@@ -173,7 +179,7 @@ new Button({
  > Note:
  > The following is only relevant if you do not use the SAP Fiori launchpad because it instantiates components for you and provides IDs.
 
- For example, if you instantiate a component inside an HTML page, set the ID of the component as shown below. The reason for this is that components could be displayed more than once on a page. To get unique IDs for the views and controls inside the component, they must be prefixed with the component ID. All views in the component that are created by the framework are automatically prefixed with the component ID. As described above, for the programmatically generated components, you must do it yourself. Example: ```lang-js
+ For example, if you instantiate a component inside an HTML page, set the ID of the component as shown below. The reason for this is that components could be displayed more than once on a page. To get unique IDs for the views and controls inside the component, they must be prefixed with the component ID. All views in the component that are created by the framework are automatically prefixed with the component ID. As described above, for the programmatically generated components, you must do it yourself. Example: ``` js
 // "Shell" required from module "sap/m/Shell"
 new Shell({
 ```
@@ -184,7 +190,7 @@ new Shell({
 > 
 
  |
-| *HIGHLIGHT START*Embedded Components*HIGHLIGHT END* |If you want to add an embedded component with a stable ID, you have to add a component re-use entry in the application component's manifest.json. Let's say you want to add an embedded component with the name `embeddedComponent.name`. You define it as follows in the application component's manifest.json file: ```lang-json
+| *HIGHLIGHT START*Embedded Components*HIGHLIGHT END* |If you want to add an embedded component with a stable ID, you have to add a component re-use entry in the application component's manifest.json. Let's say you want to add an embedded component with the name `embeddedComponent.name`. You define it as follows in the application component's manifest.json file: ``` json
 "sap.ui5": {
    "componentUsages": {
       "reuseName": {
@@ -197,38 +203,32 @@ new Shell({
 }
 
 ```
-   "componentUsages": {
-      "reuseName": {
-         "name": "embeddedComponent.name",
          "settings": {
             "id": "embeddedComponentID"
          }
       }
    }
 }
+
+```
+
+ Now you can use the re-use entry name defining the component container in XML, the re-use entry name could be used.: ``` xml
+<core:ComponentContainer
+   usage="reuseName"
+   async="true"
+   id="embeddedComponentContainerID"
+   propagateModel="true" //to propagate models from the application component
+/>
+
 ```
 
  > Note:
-> In order to support SAPUI5 flexibility features, all embedded components should have a stable ID.
-> 
-> 
-
- |
-| *HIGHLIGHT START*XML fragments*HIGHLIGHT END* |If you are using XML fragments in your app, make sure they are instantiated using the correct view ID prefix. Example: ```lang-js
-// "Fragment" required from module "sap/ui/core/Fragment"
-Fragment.load({
-	id: this.getView().getId(),
-	name: "my.fragment.SampleFragment"
-});
-```
+ > In order to support SAPUI5 flexibility features, all embedded components should have a stable ID.
 			</td>
 		</tr>
 		<tr>
 			<td> **XML fragments** </td>
-			<td>If you are using XML fragments in your app, make sure they are instantiated using the correct view ID prefix. Example: 
-
-```
-lang-js// "Fragment" required from module "sap/ui/core/Fragment"
+			<td>If you are using XML fragments in your app, make sure they are instantiated using the correct view ID prefix. Example: ``` js// "Fragment" required from module "sap/ui/core/Fragment"
 Fragment.load({
 	id: this.getView().getId(),
 	name: "my.fragment.SampleFragment"
@@ -238,6 +238,7 @@ Fragment.load({
 		</tr>
 	</tbody>
 </table>
+
 > Note:
 > If some controls have disappeared after a software upgrade or the way in which they can be identified has been changed, this has a direct impact on the functions that depend on stable IDs. For this reason, the IDs, which are part of the public API of the app, must be kept stable over the life cycle of the app.
 > 
@@ -247,7 +248,7 @@ Fragment.load({
 
 <a name="loiof51dbb78e7d5448e838cdc04bdf65403__section_lvk_cqp_3z"/>
 
-### How to name stable IDs
+### How to Name Stable IDs
 
 Choose names for your stable IDs that describe the semantics of your views and controls, such as *page* or *table*.
 
@@ -268,4 +269,28 @@ If you build an app using the following stable IDs for the component and the vie
 | `objectHeader` | `myProducts---product--objectHeader` |
 
 For more information about the SAP Fiori Worklist Application template, see [Worklist Template](Worklist_Template_a77f2d2.md).
+
+***
+
+<a name="loiof51dbb78e7d5448e838cdc04bdf65403__section_howtocheck"/>
+
+### How to Check If All Your IDs Are Stable
+
+With the Support Assistant, you can analyze whether there are any issues with the stable IDs used in your app. Here's how you can check this:
+
+1.  Open your app in a browser.
+2.  Choose * CTRL SHIFT ALT P * to start the Support Assistant.
+3.  In the *Technical Information Dialog*, choose *Activate Support Assistant*.
+4.  In the table on the left, deselect all rules.
+5.  Click on the *Rules* column.
+6.  Filter for `stable` and choose *Enter*.
+7.  Select the *Stable control IDs are required for SAPUI5 flexibility services* rule.
+8.  Choose *Analyze*.
+
+If any generated IDs are found, replace them with stable IDs as described above.
+
+**Related information**  
+
+
+[Support Assistant](Support_Assistant_57ccd7d.md)
 

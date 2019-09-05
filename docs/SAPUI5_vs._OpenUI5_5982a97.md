@@ -1,11 +1,12 @@
+<!-- loio5982a9734748474aa8d4af9c3d8f31c0 -->
+
 | loio |
 | -----|
 | 5982a9734748474aa8d4af9c3d8f31c0 |
 
 <div id="loio">
 
-view on: [help.sap.com](https://help.sap.com/viewer/DRAFT/3237636b137e43519a20ad5513c49ccb/latest/en-US/5982a9734748474aa8d4af9c3d8f31c0.html) | [demo kit nightly build](https://openui5nightly.hana.ondemand.com/#/topic/5982a9734748474aa8d4af9c3d8f31c0) | [demo kit latest release](https://openui5.hana.ondemand.com/#/topic/5982a9734748474aa8d4af9c3d8f31c0)</div>
-<!-- loio5982a9734748474aa8d4af9c3d8f31c0 -->
+view on: [demo kit nightly build](https://openui5nightly.hana.ondemand.com/#/topic/5982a9734748474aa8d4af9c3d8f31c0) | [demo kit latest release](https://openui5.hana.ondemand.com/#/topic/5982a9734748474aa8d4af9c3d8f31c0)</div>
 
 ## SAPUI5 vs. OpenUI5
 
@@ -68,7 +69,7 @@ Technically, you can switch between OpenUI5 and SAPUI5 \(providing you have the 
 
 Just check first which SAPUI5 version you need, because the version numbers of OpenUI5 and SAPUI5 might differ on patch level \(last number\). You can find this information in the technical information dialog \(* Ctrl Alt Shift P *\).
 
-If you're using the content delivery network, you can simply replace the bootstrapping reference to `https://openui5.hana.ondemand.com/<1.xx.yy>/` with a reference to `https://openui5.hana.ondemand.com/<1.xx.zz>/`. For more information, see [Variant for Bootstrapping from Content Delivery Network](Variant_for_Bootstrapping_from_Content_Delivery_Network_2d3eb2f.md).
+If you're using the content delivery network, you can simply replace the bootstrapping reference to `https://openui5.hana.ondemand.com/<1.xx.yy>/` with a reference to `https://openui5.hana.ondemand.com/<1.xx.zz>/`. For more information, see [Variant for Bootstrapping from Content Delivery Network](Variant_for____________Bootstrapping_from_Content_Delivery_Network_2d3eb2f.md).
 
 For all other cases, replace the runtime. Since the technical names \(of controls, libraries, etc.\) and APIs are the same in both OpenUI5 and SAPUI5, the code will still work and you can start enhancing it directly.
 

@@ -1,11 +1,12 @@
+<!-- loiofe12df2e338e43598977d09f3d191b7b -->
+
 | loio |
 | -----|
 | fe12df2e338e43598977d09f3d191b7b |
 
 <div id="loio">
 
-view on: [help.sap.com](https://help.sap.com/viewer/DRAFT/3237636b137e43519a20ad5513c49ccb/latest/en-US/fe12df2e338e43598977d09f3d191b7b.html) | [demo kit nightly build](https://openui5nightly.hana.ondemand.com/#/topic/fe12df2e338e43598977d09f3d191b7b) | [demo kit latest release](https://openui5.hana.ondemand.com/#/topic/fe12df2e338e43598977d09f3d191b7b)</div>
-<!-- loiofe12df2e338e43598977d09f3d191b7b -->
+view on: [demo kit nightly build](https://openui5nightly.hana.ondemand.com/#/topic/fe12df2e338e43598977d09f3d191b7b) | [demo kit latest release](https://openui5.hana.ondemand.com/#/topic/fe12df2e338e43598977d09f3d191b7b)</div>
 
 ## Step 2: Bootstrap
 
@@ -32,7 +33,7 @@ You can view and download all files at [Walkthrough - Step 2](https://openui5.ha
 > 
 > You can use this reference to the latest stable version of OpenUI5 for the tutorial or for testing purposes, but never use this for productive use. In an actual app, you always have to specify an OpenUI5 version explicitly.
 > 
-> For more information about the CDN, see [Variant for Bootstrapping from Content Delivery Network](Variant_for_Bootstrapping_from_Content_Delivery_Network_2d3eb2f.md).
+> For more information about the CDN, see [Variant for Bootstrapping from Content Delivery Network](Variant_for____________Bootstrapping_from_Content_Delivery_Network_2d3eb2f.md).
 > 
 > In case you are using SAP Web IDE, you can right-click the project and select *New* \> *HTML5 Application Descriptor* to make the `/resources…` reference work. This creates the `neo-app.json` file, which configures a URL mapping for this path.
 > 
@@ -93,7 +94,7 @@ In this step, we load the OpenUI5 framework from our local webserver and initial
 
 ### webapp/index.js \(New\)
 
-```lang-js
+``` js
 sap.ui.define([
 
 ], function () {
@@ -116,7 +117,7 @@ Now, we create a new `index.js` script that will contain the application logic f
 
 [Compatibility Version Information](Compatibility_Version_Information_9feb96d.md)
 
-[Variant for Bootstrapping from Content Delivery Network](Variant_for_Bootstrapping_from_Content_Delivery_Network_2d3eb2f.md)
+[Variant for Bootstrapping from Content Delivery Network](Variant_for____________Bootstrapping_from_Content_Delivery_Network_2d3eb2f.md)
 
 [https://jquery.org/](https://jquery.org/)
 

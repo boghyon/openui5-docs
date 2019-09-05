@@ -1,11 +1,12 @@
+<!-- loio91f021426f4d1014b6dd926db0e91070 -->
+
 | loio |
 | -----|
 | 91f021426f4d1014b6dd926db0e91070 |
 
 <div id="loio">
 
-view on: [help.sap.com](https://help.sap.com/viewer/DRAFT/3237636b137e43519a20ad5513c49ccb/latest/en-US/91f021426f4d1014b6dd926db0e91070.html) | [demo kit nightly build](https://openui5nightly.hana.ondemand.com/#/topic/91f021426f4d1014b6dd926db0e91070) | [demo kit latest release](https://openui5.hana.ondemand.com/#/topic/91f021426f4d1014b6dd926db0e91070)</div>
-<!-- loio91f021426f4d1014b6dd926db0e91070 -->
+view on: [demo kit nightly build](https://openui5nightly.hana.ondemand.com/#/topic/91f021426f4d1014b6dd926db0e91070) | [demo kit latest release](https://openui5.hana.ondemand.com/#/topic/91f021426f4d1014b6dd926db0e91070)</div>
 
 ## Versioning of OpenUI5
 
@@ -59,7 +60,7 @@ In the version overview at [https://openui5.hana.ondemand.com/versionoverview.ht
 
 ### Availability of Multiple Versions on the Akamai Content Delivery Network
 
-All OpenUI5 resources are available on the content delivery network Akamai. There, you can also find multiple OpenUI5 versions, and you can use them in your code as described in [Variant for Bootstrapping from Content Delivery Network](Variant_for_Bootstrapping_from_Content_Delivery_Network_2d3eb2f.md).
+All OpenUI5 resources are available on the content delivery network Akamai. There, you can also find multiple OpenUI5 versions, and you can use them in your code as described in [Variant for Bootstrapping from Content Delivery Network](Variant_for____________Bootstrapping_from_Content_Delivery_Network_2d3eb2f.md).
 
 Check the available versions with respective maintenance status at [https://openui5.hana.ondemand.com/versionoverview.html](https://openui5.hana.ondemand.com/versionoverview.html).
 
@@ -73,7 +74,7 @@ You can find which patch versions you use in you app in the technical informatio
 
 To access the OpenUI5 version \(core version\) at runtime, you use the following code:
 
-```lang-js
+``` js
 var oConfig = sap.ui.getCore().getConfiguration();
 var oVersion = oConfig.getVersion();
 
